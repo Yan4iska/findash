@@ -80,7 +80,11 @@ function dateKey(date: Date) {
 }
 function nextOccurrence(date: Date, frequency: 'weekly' | 'monthly') {
   const next = new Date(date);
-  frequency === 'weekly' ? next.setDate(next.getDate() + 7) : next.setMonth(next.getMonth() + 1);
+  if (frequency === 'weekly') {
+    next.setDate(next.getDate() + 7);
+  } else {
+    next.setMonth(next.getMonth() + 1);
+  }
   return next;
 }
 
