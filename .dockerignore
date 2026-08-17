@@ -1,0 +1,14 @@
+node_modules
+dist
+.turbo
+coverage
+.git
+.github
+*.log
+.env
+.env.*
+!.env.example
+apps/web/dist
+**/__tests__
+**/*.test.ts
+**/*.test.tsx

@@ -1,0 +1,8 @@
+.message {
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  background: #fef2f2;
+  color: var(--color-danger);
+  font-size: var(--font-size-sm);
+  border: 1px solid #fecaca;
+}

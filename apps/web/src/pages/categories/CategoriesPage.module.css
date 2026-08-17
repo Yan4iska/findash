@@ -1,0 +1,70 @@
+.categoryList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.categoryItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.dragHandle {
+  cursor: grab;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+  padding: var(--space-xs);
+}
+
+.dragHandle:active {
+  cursor: grabbing;
+}
+
+.colorDot {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.categoryName {
+  flex: 1;
+  font-weight: 500;
+}
+
+.categoryActions {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+.inlineForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+}
+
+.inlineFormRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  align-items: flex-end;
+}
+
+@media (min-width: 480px) {
+  .inlineFormRow {
+    flex-wrap: nowrap;
+  }
+}
